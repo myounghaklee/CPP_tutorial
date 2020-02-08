@@ -53,5 +53,5 @@ int gcdRecursion(int u, int v){
 void main(void){
     int u;
     int v;
-    //여기서 찍어보면 된다. 
+    //여기서 찍어보면 된다.
 }
