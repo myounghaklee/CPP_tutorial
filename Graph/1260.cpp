@@ -1,15 +1,16 @@
 #include <stdio.h>
+#include <cstdio>
 #include <queue>
 #include <algorithm>
 #include <cstring>
 #include <vector>
-#include <iostream>
+
 using namespace std;
 
 vector<int> map[1001];
 queue<int> q;
 bool check[1001];
-unsigned int N, M ,V;
+
 
 //인접리스트 이용
 void dfs(int node){
@@ -20,9 +21,7 @@ void dfs(int node){
         if(check[next]==false){
             dfs(next);
         }
-
     }
-
 }
 
 void bfs(int node){
@@ -34,8 +33,8 @@ void bfs(int node){
         int x=q.front();
         q.pop();
         printf("%d ",x);
-        for(int i =0;i<map[node].size();i++){
-            int next =map[node][i];
+        for(int i =0;i<map[x].size();i++){
+            int next =map[x][i];
             if(check[next]==false){
                 check[next]=true;
                 q.push(next);
@@ -46,6 +45,7 @@ void bfs(int node){
 
 
 int main(){
+    int N, M ,V;
     scanf("%d %d %d",&N, &M, &V);
     for(int i =0; i<M; i++){
         int u, v; 
