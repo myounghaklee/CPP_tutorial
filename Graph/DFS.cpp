@@ -28,6 +28,7 @@ void dfs(int x){
 }
 
 
+//메인에서 dfs함수를 호출하여 사용하면 된다. 
 
 int main(){
     return 0;
