@@ -7,7 +7,12 @@ void bfs(int x, int y , int cnt){
     q.push(make_pair(x,y));
     d[x][y] = cnt;
     while(!q.empty()){
-        
+        x=q.front().first;
+        y= q.front().second;
+        q.pop;
+        for(int k=0; k<4;k++){
+            
+        }
     }
 }
 
