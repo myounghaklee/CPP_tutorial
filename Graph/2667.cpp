@@ -4,7 +4,11 @@
 
 void bfs(int x, int y , int cnt){
     queue<pair<int,int,>> q; 
-    
+    q.push(make_pair(x,y));
+    d[x][y] = cnt;
+    while(!q.empty()){
+        
+    }
 }
 
 int main (){
