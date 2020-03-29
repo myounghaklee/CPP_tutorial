@@ -1,25 +1,21 @@
 #include <stdio.h>
 using namespace std;
 
-void minMove(short n,int a, int b ){
-    unsigned int result = 0;
-    a++;
-    for(int i =0; i<n; i++){
-    if (a%b == 0){
-        printf("%d\n",result);
-    }
-    result++;
-    }
-}
 int main (){
     unsigned short t;
     unsigned int a, b;
-    
+    unsigned int result;
     scanf("%hd", &t);
 
     for(int i=0; i<t; i++){
         scanf("%d %d", &a ,&b);
-        minMove(t,a,b);
+        if(a%b==0){
+            printf("0\n");
+        }
+        else{
+            result = b-a%b;
+            printf("%d",result);
+        }
         
     }
     return 0;
