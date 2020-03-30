@@ -1,22 +1,21 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
+
 using namespace std;
 
-int main (){
-    unsigned short t;
-    unsigned int a, b;
-    unsigned int result;
-    scanf("%hd", &t);
-
-    for(int i=0; i<t; i++){
-        scanf("%d %d", &a ,&b);
-        if(a%b==0){
-            printf("0\n");
-        }
-        else{
-            result = b-a%b;
-            printf("%d",result);
-        }
-        
-    }
-    return 0;
+int main() {
+#ifdef _DEBUG
+	freopen("input.txt", "r", stdin);
+//	freopen("output.txt", "w", stdout);
+#endif
+	
+	int t;
+	cin >> t;
+	while (t--) {
+		int a, b;
+		cin >> a >> b;
+		if (a % b == 0) cout << 0 << endl;
+		else cout << b - a % b << endl;
+	}
+	
+	return 0;
 }
