@@ -2,7 +2,7 @@
 using namespace std;
 
 
-int check[101];
+int check[201]; //기존에100이 있고 100번 움직일 수 있을때 
 
 
 void solution(){
@@ -15,7 +15,7 @@ void solution(){
     }
     int tes = 0;
 	int v;
-		for (int j = 1;j <= 100;j++){
+		for (int j = 1;j <= 200;j++){
 			if (check[j] == 0)
 				tes++;
 			if (tes == x){
