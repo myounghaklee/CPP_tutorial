@@ -67,3 +67,6 @@ exit(0);
 
 ```
 ```
+
+## cout & cin
+### cout  
