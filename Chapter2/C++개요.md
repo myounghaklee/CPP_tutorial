@@ -31,3 +31,13 @@ c언어와의 하휘호환성을 제공하며 스펙상 단점을 보안한다.
 - flow control : if else, switch, while, do while, for goto, continue, break
 - function : function name, argument, return value, body
 - default argument, function overloading, inlien function
+
+## 식별자 종류
+- 변수 또는 오브젝트 이름
+- 클래스, 구조체, 공용체, 열거형 이름
+- 클래스, 구조체 공용체 열거형의 멤버 이름
+- 함수 이름
+- typedef이름
+- 레이블 이름
+- 매크로 이름
+- 매크로 인자 이름
