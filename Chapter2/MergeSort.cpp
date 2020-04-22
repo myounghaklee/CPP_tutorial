@@ -3,14 +3,34 @@
 #include <stdlib.h>
 using namespace std;
 int sorted[10000];
-void merge(int left, int mid, int rigth , int * arrayPtr){
+void merge(int left, int mid, int right , int * arrayPtr){
 
     int i ,j,k,l;
     i = left;
     j = mid+1;
     k= left;
     while(i<=mid && k<=right){
-        if
+        if(arrayPtr[i]<=arrayPtr[j]){
+            sorted[k++]= arrayPtr[i++];
+        }
+        else
+        {
+            sorted[k++]= arrayPtr[j++];
+        }
+        
+    }
+    if(i>mid){
+        for( l=j;l<=right;l++){
+            sorted[k++]= arrayPtr[l];
+        }
+    }
+    else{
+        for(l=i;l<=mid;l++){
+            sorted[k++]=arrayPtr[l];
+        }
+    }
+    for(l=left;l<=right;l++){
+        arrayPtr[l]=sorted[l];
     }
     
 
@@ -25,7 +45,8 @@ void mergeSort(int left, int right , int * arrayPtr){
         merge(left, mid, right, arrayPtr);
     }
 }
-int main (){
+
+int main(){
     int n ; 
     int * arrayPtr;
     cin >> n;
@@ -34,6 +55,9 @@ int main (){
         cin >>arrayPtr[i];
     }
     mergeSort(0,n-1, arrayPtr);
+    for(int i =0; i<n;i++){
+        cout << arrayPtr[i];
+    }
 
 
     return 0;
