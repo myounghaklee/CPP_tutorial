@@ -49,6 +49,7 @@ c언어와의 하휘호환성을 제공하며 스펙상 단점을 보안한다.
 - 코드 : 프로그램 코드 
 의 순서로 운영체제에서 메모리 공간을 할당합니다.
 
+```
 int main(){
     int n;
     int *arrayPtr;
@@ -56,3 +57,10 @@ int main(){
     arrayPtr = (int*)malloc(n*sizeof(int));
     return 0;
 }
+```
+
+## single quote vs double qoute
+'a' = 바이트의 메모리에 영문자 A를 상수로 표현한다. 
+"a" = 문자열의 끝을 알리는 ₩0가 포함되어 2바이트의 메모리에 표혀한다. 
+
+ 
