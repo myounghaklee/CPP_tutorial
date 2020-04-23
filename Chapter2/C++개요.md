@@ -63,4 +63,19 @@ int main(){
 'a' = 바이트의 메모리에 영문자 A를 상수로 표현한다. 
 "a" = 문자열의 끝을 알리는 ₩0가 포함되어 2바이트의 메모리에 표혀한다. 
 
- 
+
+## 범위지정 연산자 ::
+만약 전역변수명과 지역변수명이 같을때 함수내애서 전역변수를 사용하고 싶을때 사용한다.
+```
+#incluce <iostream>
+using namespace std;
+int hak = 10;
+int main () {
+    int hak =20;
+    cout << "전역변수 " <<::hak << endl;
+    cout <<"지역 변수" <<hak << endl;
+    return 0 ; 
+
+}
+
+```
