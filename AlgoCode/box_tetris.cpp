@@ -42,6 +42,6 @@ int main(){
             }
         }
     }
-    printf("%d",fallenCount);d
+    printf("%d",fallenCount);
     return 0;
 }
