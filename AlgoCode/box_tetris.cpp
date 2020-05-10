@@ -23,7 +23,7 @@ int main(){
         }
     }
     for(int i =0; i<N; i++){ //방에 막대기 채우기
-        scanf("%d",H);
+        scanf("%d",room[i]);
         for(int j=0; j<H; j++){
             room[i][j]= 1;
         }
