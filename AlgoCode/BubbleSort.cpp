@@ -14,7 +14,7 @@ int main()
     int temp;
     for (int i = 0; i < 4; i++)
     {
-        for (int j = 0; j < 5 - i - 1; j++)
+        for (int j = 0; j < 5 - i ; j++)
         {
             if (array[j] > array[j + 1])
             {
