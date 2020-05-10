@@ -8,19 +8,26 @@ bubble sort
 오래걸리지만 단순한 정렬
 
 */
-int main(){
-    int array[5]={55,7,78, 12,42};
+int main()
+{
+    int array[5] = {55, 7, 78, 12, 42};
     int temp;
-    for(int i =1 ;i<5;i++){
-        for(int j =i;j<5;j++)
-        if(array[i]<array[i-1]){
-            temp =array[i];
-            array[i]= array[i-1];
-            array[i-1]= temp;
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 5 - i - 1; j++)
+        {
+            if (array[j] > array[j + 1])
+            {
+                temp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = temp;
+            }
         }
     }
-    for(int i=0; i<5;i++){
-        printf("%d \t",array[i]);
+
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d \n", array[i]);
     }
 
     return 0;
