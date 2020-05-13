@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (){
+void test(int arr[][]){
     int n ;
     int array[n][n];
     scanf("%d",&n);
@@ -11,11 +11,14 @@ int main (){
         for(int j =0; j<n;j++){
             for (int k=0;k<4;k++){
                 int testX = i+dx[k];
-                int textY = ㅓ+dh[k];
+                int testY = i+dy[k];
                 test(array[testX][testY]);
             }
 
         }
     }
+}
+
+int main (){
     return 0;
 }
