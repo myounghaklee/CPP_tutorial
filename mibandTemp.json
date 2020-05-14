@@ -37,13 +37,13 @@ m{
       },
       "Seconds":{
         "Tens": {
-          "X": 40,
+          "X": 50,
           "Y": 180,
           "ImageIndex": 1,
           "ImagesCount": 10
         },
         "Ones": {
-          "X": 50,
+          "X": 65,
           "Y": 180,
           "ImageIndex": 1,
           "ImagesCount": 10
@@ -54,20 +54,20 @@ m{
       "MonthAndDay": {
         "Separate": {
           "Month": {
-            "TopLeftX": 10,
-            "TopLeftY": 212,
-            "BottomRightX": 44,
-            "BottomRightY": 133,
+            "TopLeftX": 54,
+            "TopLeftY": 203,
+            "BottomRightX": 75,
+            "BottomRightY": 221,
             "Alignment": "TopLeft",
             "Spacing": -6,
             "ImageIndex": 11,
             "ImagesCount": 10
           },
           "Day": {
-            "TopLeftX": 10,
-            "TopLeftY": 181,
-            "BottomRightX": 44,
-            "BottomRightY": 133,
+            "TopLeftX": 85,
+            "TopLeftY": 103,
+            "BottomRightX": 107,
+            "BottomRightY": 221,
             "Alignment": "TopLeft",
             "Spacing": -6,
             "ImageIndex": 21,
@@ -78,8 +78,8 @@ m{
         "TwoDigitsDay": true
       },
       "WeekDay": {
-        "X": 15,
-        "Y": 200,
+        "X": 16,
+        "Y": 207,
         "ImageIndex": 50,
         "ImagesCount": 21
       }
@@ -135,12 +135,6 @@ m{
           "Spacing": 1,
           "ImageIndex": 31,
           "ImagesCount": 10
-        },
-        "Icon": {
-          "X": 92,
-          "Y": 3,
-          "ImageIndex": 41,
-          "ImagesCount": 9
         }
       }
     }
