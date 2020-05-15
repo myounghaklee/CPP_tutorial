@@ -10,7 +10,9 @@ void SelectionSort(char*a, int size){
         for(j=i+1;j<size;j++){
             if(a[minimum]>a[j]){
                 minimum=j;
-                
+            }
+            if(minimum !=i){
+                swap(a[minimum],a[j])
             }
         }
     }
