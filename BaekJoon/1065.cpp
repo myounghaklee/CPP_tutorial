@@ -10,7 +10,7 @@ int main(){
     int temp;
     int hunds,tens,ones;
     scanf("%d",&n);
-    if(n<100){
+
         count1=n;
     }
     else{
