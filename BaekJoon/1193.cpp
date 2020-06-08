@@ -8,12 +8,14 @@ int main(){
     int i=1;
     scanf("%d", &x);
 
-    while(x){
-        x-=i;// i번쨰 줄의 몇번쨰인지 
+    while(1){
+        if(x>i){
+            x-=i;// i번쨰 줄의 몇번쨰인지 
+        }
+        
 
-        whatLine = i+1;//몇번째 줄인지
-
-        if(i>=x){
+        else{
+            whatLine = i;//몇번째 줄인지
             break;
         }
         i++;
@@ -34,3 +36,5 @@ int main(){
 
     return 0;
 }
+
+//http://colorscripter.com/s/pt3bjKx
