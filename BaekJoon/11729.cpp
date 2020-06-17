@@ -36,6 +36,6 @@ int main (){
 	}
     printf("%d\n",moveCount);
     hanoi(n, 1,2,3);
-
+    sleifn 
     return 0;
 }
