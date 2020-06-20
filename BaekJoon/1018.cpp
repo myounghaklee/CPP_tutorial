@@ -1,9 +1,10 @@
 #include <stdio.h>
 /*체스 순회를 하는 문제이기 때문에 brute-force Algorithm 을 사용
 */
-
-#define min(a,b) (a<b?a:b)
+#define  min(a,b) (((a)<(b))?(a):(b))
 char chess[50][50];
+
+
 
 int main (){
     int result =100;
@@ -20,21 +21,23 @@ int main (){
 
     for(int i =0; i<n-7;i++){//입력받은만큼 순회 
         for(int j =0; j<m-7;j++){
+
+
             int cnt =0;
-            for( int k=i; k<i+8; k++){// 체스판 크기만큼 체크 
-                for(int l =j; l<j+8; l++){
+            for( int k=i; k<i+8; ++k){// 체스판 크기만큼 체크 
+                for(int l =j; l<j+8; ++l){
                     //if(((k%2)==0 && (l%2)==0)|| ((k%2)==1&&(l%2)==1)){//짝짝, 홀홀 일때 
                     if((k%2)^(l%2)){  
                         if(chess[k][l]=='W') {
                             cnt++;
-                            printf("짝짝 %d %d %d\n",k,l, cnt);
+                           // printf("짝짝 %d %d %d\n",k,l, cnt);
                         }
                     }
                     else{
                         if(chess[k][l]=='B') //cnt++; //홀짝, 짝홀 일때 
                         {
                             cnt++;
-                            printf("홀짝 %d %d %d\n",k,l,cnt);
+                            //printf("홀짝 %d %d %d\n",k,l,cnt);
 
 
                         }
