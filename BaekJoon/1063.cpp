@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <string>
 
+/*
+
+method of using string header 
+*/
 using namespace std;
 
 //R,L,B,T,RT,LT,RB,LB
@@ -17,6 +21,7 @@ int main (){
     for(int i =0; i<n;i++){
         scanf("%d", &nMove[i]);
     }
+
 
     return 0;
 }
