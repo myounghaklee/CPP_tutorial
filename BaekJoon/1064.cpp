@@ -9,16 +9,18 @@ using namespace std;
 typedef long double ld;
 
 int main (){
-    ld Xarr[3];
-    ld Yarr[3];
+    int Xarr[3];
+    int Yarr[3];
     ld length[3];
     ld length1, length2, length3;
     ld min= 1000000;
     ld max = 0;
     ld tempLength;
+    int idx = 0;
+    ld result; 
     for (int i =0; i <3; i++){
-        scanf("%ld", &Xarr[i]);
-        scanf("%ld", &Yarr[i]);
+        scanf("%d", &Xarr[i]);
+        scanf("%d", &Yarr[i]);
     }
     length[0] = sqrt(pow((Xarr[0]-Xarr[1]),2)-pow((Yarr[0]-Yarr[1]),2));
     length[1] = sqrt(pow((Xarr[1]-Xarr[2]),2)-pow((Yarr[1]-Yarr[2]),2));
@@ -26,23 +28,24 @@ int main (){
     if((Xarr[0]==Xarr[1]==Xarr[2])||(Yarr[0]==Yarr[1]==Yarr[2])){
         printf("-1\n");
     }
-    if()
-    int idx = 0;
-    while(true){
-        
+    
+    
+    while(1){
         tempLength = 2*length[idx] + 2*length[++idx];
         min = min(min, tempLength);
         max = max(max,tempLength);
-        printf("%d", idx);
         
-        if( idx==3) break;
+        
+        if( idx==2) {
+            tempLength = 2*length[0] + 2*length[idx];
+            min = min(min, tempLength);
+            max = max(max,tempLength);   
+            break;
+        }
 
 
     }
-    printf("%ld", max-min);
-
-    
-
-
+    result = max-min;
+    printf("%Ld", result);
     return 0;
 }
