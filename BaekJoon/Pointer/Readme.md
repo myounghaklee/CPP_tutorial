@@ -17,3 +17,6 @@ printf("%d",&a) // a의 주소 출력된다 p의 출력 결과와 동일
 printf("%d",&p) // p의 주소 출력. 즉, p의주소에 p의 값인 a의 주소가 들어있다.
 printf("%d",*p) // p가 가리키고 있는 a의 값인 5가 출력된다
 ```
+
+## pointer to pointer
+![이미지] (/Users/myounghak/dev/CPP_tutorial/BaekJoon/Pointer/pointerToPoiner.png)
