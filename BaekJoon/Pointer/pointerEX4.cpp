@@ -11,13 +11,15 @@ memory architecture
 |        Code(text)         |
 |---------------------------|
 
-코드상에 변수를 선언하면 메모리의code영역에 저장된다. 
+코드상에 변수를 선언하면 메모리의 stack영역에 저장된다. 
 global variable은 static/global영ㅇ역에 저장된다. 
+main() function은 스택 프레임에 저장된다. main에서 a=10으로 값을 할당한 후 
+increment함수를 호출하게 되면 stack영역에 increment함수가 저장되어있는 다른 프레임을 호출한다 
 */
 
 
 void increment(int a){
-    a ++;
+    ++a ;
 }
 
 
