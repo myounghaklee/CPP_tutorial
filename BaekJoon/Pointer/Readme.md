@@ -23,3 +23,4 @@ printf("%d",*p) // p가 가리키고 있는 a의 값인 5가 출력된다
 
 
 ## call by referenece
+ 
