@@ -23,4 +23,21 @@ printf("%d",*p) // p가 가리키고 있는 a의 값인 5가 출력된다
 
 
 ## call by referenece
- 
+ memory architecture
+|---------------------------|
+|        heap               |
+|---------------------------|
+|        Stack              |
+|---------------------------|
+|        Static/global      |
+|---------------------------|
+|        Code(text)         |
+|---------------------------|
+
+코드상에 변수를 선언하면 메모리의 stack영역에 저장된다. 
+global variable은 static/global영ㅇ역에 저장된다. 
+main() function은 스택 프레임에 저장된다. main에서 a=10으로 값을 할당한 후 
+increment함수를 호출하게 되면 stack영역에 increment함수가 저장되어있는 다른 프레임을 호출한다 
+increment의 a 지역변수 이곳에 담겨있다.
+main's increment(a)의 a는 actual argument라 하고 void increment(int a)의 a는 formal argument라고 한다. 
+increment 함수를 main 의 a =10이라는 값을 대입해서 호출했기 때문에 call by value라 한다
