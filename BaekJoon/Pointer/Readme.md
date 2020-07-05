@@ -20,3 +20,6 @@ printf("%d",*p) // p가 가리키고 있는 a의 값인 5가 출력된다
 
 ## pointer to pointer
 ![이미지] (/Users/myounghak/dev/CPP_tutorial/BaekJoon/Pointer/pointerToPoiner.png)
+
+
+## call by referenece
