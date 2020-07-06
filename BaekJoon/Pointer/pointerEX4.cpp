@@ -22,20 +22,24 @@ increment 함수를 main 의 a =10이라는 값을 대입해서 호출했기 때
 */
 
 
-Void increment(int a){//Main에 의해서 호출되는 함수이기 때문에 called function
+void increment(int a){//Main에 의해서 호출되는 함수이기 때문에 called function
     ++a ;
     
 }
 
+void Increment(int *p){
+    *p = (*p)+1;
+}
 
 
 int main(){ //increment, printf를 호출하기 때문에 "calling function"이다
     int a =10;
     increment(a);
-    printf("a 의 값은 = %d", increment(a)); //11 이 출력될것이라 예상하지만 10 이 출력된다 
+    printf("a 의 값은 = %d\n", a); //11 이 출력될것이라 예상하지만 10 이 출력된다 
     /* 그 이유? 
     main 함수에서 선언한 a는 local variable이다 
-
-*/
+    */
+   Increment(&a);
+   printf("call by reference = %d",a);
     return 0;
 }
