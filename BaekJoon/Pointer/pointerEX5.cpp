@@ -10,7 +10,9 @@ int main (){
         printf("배열의 %d번째 값 : %d\n",i, *p);
         p++;
     }
-
+    for(int i =0 ;i<5; i++){
+        printf("Address = %d")
+    }
 
     return 0;
 }
