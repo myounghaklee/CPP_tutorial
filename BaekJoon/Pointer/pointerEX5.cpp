@@ -11,7 +11,10 @@ int main (){
         p++;
     }
     for(int i =0 ;i<5; i++){
-        printf("Address = %d")
+        printf("Address = %d\n", &array[i]);
+        printf("Address = %d\n", array+1);
+        printf("value = %d\n", array[i]);
+        printf("Address = %d\n", *(array+i));
     }
 
     return 0;
