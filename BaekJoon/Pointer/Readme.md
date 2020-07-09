@@ -41,3 +41,29 @@ increment함수를 호출하게 되면 stack영역에 increment함수가 저장�
 increment의 a 지역변수 이곳에 담겨있다.
 main's increment(a)의 a는 actual argument라 하고 void increment(int a)의 a는 formal argument라고 한다. 
 increment 함수를 main 의 a =10이라는 값을 대입해서 호출했기 때문에 call by value라 한다
+
+
+## arrays as function arguments
+아래의 코드를보고 예를 들어 설명해 보자
+```
+#include <stdio.h>
+
+int SumOfElements(int A[]){
+    int i, sum =0;
+    for(i=0; i<sizeof(A)/sizeof(int);i++){
+        sum +=A[i];
+    }
+    return sum;
+}
+
+int main(){
+    int A[] = {1,2,3,4,5};
+    int total = SumOfElements(A);
+    printf("sum of element= %d\n", total); //15가 나오지만 3이 출력됨 
+    return 0;
+}
+```
+SumOfElements의 인자인 A배열은 main의 A 배열을 전부 복사하는게 아니다
+A의 포인터가 복사된다고 생각하면 된다. 
+컴파일러는 main의 A함수의 첫번째 주소를 카피한다.
+그래서 SumOfElements의 인자를 int * A로 변경하면된다. 
