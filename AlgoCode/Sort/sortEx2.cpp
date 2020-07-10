@@ -16,14 +16,14 @@ public :
     }
     //정렬기준 = 점수가 작은 순서로 
     bool operator <(Student & student){
-        return this ->score <student.score;
+        return this -> score <student.score;
     }
 };
-bool compare ( int a, int b){
+/*bool compare ( int a, int b){
     return a>b;       
-}
+}*/
 
-int main (){
+int main (void){
     Student students[] = {
         Student("나동빈",90),
         Student("이상욱",93),
