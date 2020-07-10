@@ -11,7 +11,7 @@ Sort 함수는 c++의 <algorithm>이라는 헤더파일에 포함되어있다.
 pair <a, b>를 사용하여 a type, b type 두가지 형태를 구조체를 사용한것처럼 묶을 수 있다. 
 예를들어 밑의 두가지는 같은것이라 생각하면 된다. 
 ```
-vector<pair<int, string> > Al
+vector<pair<int, string> > A;
 
 struct A{
     int score;
