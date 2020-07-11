@@ -19,3 +19,10 @@ struct A{
 }
 
 ```
+- 정렬할 기준이 많을때는 2중 pair를 사용하면 된다 
+- example
+````
+vector <pair <string , pair<int, int> > > vec;
+
+```
+와 같이 pair안의 pair를 사용함으로 이중 페어를 사용하여 정렬을 하면 된다. 
